@@ -3,25 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-common.css">
+    <link rel="stylesheet" href="./css/style-auth.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <title>LOGIN PAGE</title>
 </head>
 <body>
-    <div>
-        <a href="./index.html">HOME</a>
+    <header class="header">
+        <div class="home">
+            <a href="./index.html"><i class="fas fa-home icon"></i></a>
+        </div>
+        <div class="title">
+            <p>LOGIN PAGE</p>
+        </div>
+        <div class="menu">
+            <a href="#"><i class="fas fa-bars icon"></i></i></a>
+        </div>
+    </header>
+
+    <div class="auth-wrap">
+        <div class="auth-email">
+          <label for="login-email">mail address</label>
+          <input id="login-email" type="email" />
+        </div>
+      
+        <div class="auth-pass">
+          <label for="password">password</label>
+          <input id="login-pass" type="password" />
+        </div>
+        <div class="auth-button">
+            <a href="#" id="login" value="ログイン" onClick="login()">ログイン</a>
+        </div>
     </div>
-    <div>
-        <h1>LOGIN PAGE</h1>
+    <div class="auth-change">
+        <a href="./register.html">新規登録</a>
     </div>
-    <div>
-        メールアドレス <input id="login-email" type="mailAddress" required/>
-    </div>
-    <div>
-        パスワード <input id="login-pass" type="password" required/>
-    </div>
-    <input type="button" id="login" value="ログイン" onClick="login()">
-    <a href="./register.html">新規登録</a>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="/__/firebase/7.23.0/firebase-app.js"></script>
@@ -32,5 +48,6 @@
     <script src="/__/firebase/7.23.0/firebase-auth.js"></script>
     <!-- <script src="./JS/login.js"></script> -->
     <script src="./JS/auth.js"></script>
+    <script src="./JS/animation.js"></script>
 </body>
 </html>

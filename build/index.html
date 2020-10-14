@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-common.css">
+    <link rel="stylesheet" href="./css/style-index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <title>MAIN PAGE</title>
 </head>
 <body>
-    <div>
-        <a href="./index.html">HOME</a>
-    </div>
-    <div>
-        <h1 class="midashi">This is Main page!!!!</h1>
-    </div>
+    <header class="header">
+        <div class="home">
+            <a href="./index.html"><i class="fas fa-home icon"></i></a>
+        </div>
+        <div class="title">
+            <p>MAIN PAGE</p>
+        </div>
+        <div class="menu">
+            <a href="#"><i class="fas fa-bars icon"></i></i></a>
+        </div>
+    </header>
     <input type="button" id="logout" value="ログアウト" onClick="logout()">
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->

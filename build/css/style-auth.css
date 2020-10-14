@@ -1,0 +1,71 @@
+body{
+    background-color: #87e7c7;
+}
+
+.auth-wrap{
+    width: 35%;
+    margin: 250px auto 0;
+}
+
+.auth-email label,
+.auth-pass label {
+    color: #fff;
+}
+
+.auth-email input[type=email],
+.auth-pass input[type=password] {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 2px solid #00c3ffb3;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
+    /* font-size: 1.3rem; */
+}
+
+.auth-email input[type=email]:focus,
+.auth-pass input[type=password]:focus{
+    box-shadow: 0 0 8px rgba(0, 238, 255, 0.7) inset;
+}
+
+.auth-button {
+    margin: 10px auto ;
+    text-align: center;
+}
+
+.auth-button a{
+    position: relative;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    /* transition: 1s ease-in-out; */
+}
+
+.auth-button a::after {
+    position: absolute;
+    top: 21px;
+    left: -2px;
+    display: inline-block;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.auth-button a:hover::after{
+    width: 100%;
+}
+
+.auth-change {
+    text-align: right;
+    margin-top: 50px;
+    padding-right: 15px;
+}
+
+.auth-change a {
+    color: #fff;
+}

@@ -3,34 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-common.css">
+    <link rel="stylesheet" href="./css/style-auth.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <title>REGISTRATION PAGE</title>
 </head>
 <body>
-    <div>
-        <a href="./index.html">HOME</a>
-    </div>
-    <div>
-        <h1>REGISTRATION PAGE</h1>
-    </div>
-    <div>
-        メールアドレス <input id="reg-email" type="mailAddress" required/>
-    </div>
-    <div>
-        パスワード <input id="reg-pass" type="password" required/>
-    </div>
-    <input type="button" id="register" value="新規登録" onClick="register()">
-    <a href="./login.html">ログイン</a>
+    <header class="header">
+        <div class="home">
+            <a href="./index.html"><i class="fas fa-home icon"></i></a>
+        </div>
+        <div class="title">
+            <p>REGISTRATION PAGE</p>
+        </div>
+        <div class="menu">
+            <a href="#"><i class="fas fa-bars icon"></i></i></a>
+        </div>
+    </header>
 
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
-        <script src="/__/firebase/7.23.0/firebase-app.js"></script>
-        <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
-        <script src="/__/firebase/7.23.0/firebase-analytics.js"></script>
-        <!-- Initialize Firebase -->
-        <script src="/__/firebase/init.js"></script>
-        <script src="/__/firebase/7.23.0/firebase-auth.js"></script>
-        <!-- <script src="./JS/login.js"></script> -->
-        <script src="./JS/auth.js"></script>
+    <div class="auth-wrap">
+        <div class="auth-email">
+          <label for="reg-email">mail address</label>
+          <input id="reg-email" type="email" />
+        </div>
+      
+        <div class="auth-pass">
+          <label for="reg-pass">password</label>
+          <input id="reg-pass" type="password" />
+        </div>
+        <div class="auth-button">
+            <a href="#" id="register" value="新規登録" onClick="register()">登録</a>
+        </div>
+    </div>
+    <div class="auth-change">
+        <a href="./login.html">ログイン</a>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.23.0/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.23.0/firebase-analytics.js"></script>
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+    <script src="/__/firebase/7.23.0/firebase-auth.js"></script>
+    <!-- <script src="./JS/login.js"></script> -->
+    <script src="./JS/auth.js"></script>
 </body>
 </html>
